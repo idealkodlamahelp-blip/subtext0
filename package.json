@@ -4,9 +4,9 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vercel dev",
     "dev:vite": "vite",
-    "start": "node server.mjs",
+    "dev:vercel": "vercel dev",
     "generate:api": "tsx scripts/generate-api-lexicon.ts",
     "build": "npm run generate:api && tsc --noEmit && vite build",
     "preview": "vite preview",

@@ -1,0 +1,25 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "framework": "vite",
+  "functions": {
+    "api/search.js": {
+      "maxDuration": 60
+    },
+    "api/book-suggestion.js": {
+      "maxDuration": 60
+    },
+    "api/email-code.js": {
+      "maxDuration": 30
+    },
+    "api/admin.js": {
+      "maxDuration": 30
+    },
+    "api/research.js": {
+      "maxDuration": 60
+    },
+    "api/recommendations.js": {
+      "maxDuration": 30
+    }
+  }
+}

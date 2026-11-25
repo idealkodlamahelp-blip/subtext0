@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: subtext
+    runtime: node
+    plan: free
+    buildCommand: npm run build
+    startCommand: node server.mjs
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: VITE_GOOGLE_CLIENT_ID
+        value: "337534559219-fb2vnn8k0rpjbjk721nsat2c24fc6fq8.apps.googleusercontent.com"
+      # Serverless-era env vars — set these in the Render dashboard (Secrets):
+      - key: GEMINI_API_KEY
+      - key: RESEND_API_KEY
+      - key: EMAIL_CODE_SECRET
+      - key: EMAIL_FROM
+      - key: TWILIO_ACCOUNT_SID
+      - key: TWILIO_AUTH_TOKEN
+      - key: TWILIO_FROM_NUMBER
+      - key: PHONE_CODE_SECRET
+      - key: SMS_DEMO_MODE
+      - key: ALLOWED_ORIGINS
